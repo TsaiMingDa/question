@@ -11,7 +11,8 @@ html,body,ul{
   position: fixed;
   top: 0;
   left: 0;
-
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .box{
     list-style: none;
@@ -49,6 +50,4 @@ html,body,ul{
 }
 .m_header{
   height: 100%;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
 }
