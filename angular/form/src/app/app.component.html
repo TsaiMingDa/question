@@ -1,0 +1,9 @@
+<form #myForm="ngForm">
+  <input type="text" name="name" ngModel #inputName="ngModel" >
+  <br>
+  <input type="text" name="name2" ngModel [appValidator]="inputName.value">
+
+  <button  class="btn" [disabled]="myForm.invalid">Submit</button>
+  {{myForm.invalid}}
+</form>
+

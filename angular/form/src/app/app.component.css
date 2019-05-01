@@ -1,0 +1,8 @@
+.btn{
+  background-color:#4cae4c;
+  color: #fff;
+  box-shadow: none;
+}
+.btn[disabled]{
+  background-color: gray;
+}
