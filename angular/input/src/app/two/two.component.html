@@ -1,0 +1,30 @@
+<form [formGroup]="formData">
+  <h1>component two</h1>
+  <div>
+    <label>
+      選項A
+      <input  type="radio" formControlName="option" name="option" value="A">
+    </label>
+  </div>
+  <div>
+    <label>
+      選項B
+      <input  type="radio" formControlName="option" name="option" value="B">
+    </label>
+  </div>
+  <div>
+    <label>
+      選項C
+      <input  type="radio" formControlName="option" name="option" value="C">
+    </label>
+  </div>
+  <div>
+    <h3>sub option</h3>
+    <div *ngFor="let item of opt[formData.value.option]">
+      <label>
+        {{item}}
+        <input  type="radio" formControlName="subOption" name="subOption" [value]="item">
+      </label>
+    </div>
+  </div>
+</form>

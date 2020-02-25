@@ -1,0 +1,12 @@
+.wrap{
+  outline: 1px solid;
+}
+.opt {
+  outline: 1px solid;
+}
+.wrap .item{
+  display: inline-block;
+  width: 100px;
+  height: 80px;
+  border: 1px solid;
+}
